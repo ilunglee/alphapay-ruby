@@ -13,6 +13,8 @@ Metrics/MethodLength:
   Enabled: true
 Metrics/BlockLength:
   Enabled: true
+  Exclude:
+    - 'spec/**/*.rb'
 
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: empty_lines

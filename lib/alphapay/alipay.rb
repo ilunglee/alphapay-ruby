@@ -1,12 +1,17 @@
 module AlphaPay
 
   # AliPay
-  class AliPay < UnifiedOrder
+  class AliPay < AlphaPay::Order
 
-    ALIPAY_QR = { channel: 'Alipay', operator: 'alipay qr' }.freeze
+    CHANNEL  = 'Alipay'.freeze
+    OPERATOR = 'alipay qr'.freeze
 
-    def qrcode
-      send_request(ALIPAY_QR)
+    def channel
+      CHANNEL
+    end
+
+    def operator
+      OPERATOR
     end
 
   end

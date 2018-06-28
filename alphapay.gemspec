@@ -13,15 +13,17 @@ Gem::Specification.new do |s|
   s.summary     = 'AlphaPay Gateway Integration'
   s.description = 'This is a gem for integrating with AlphaPay Gateway'
   s.license     = 'MIT'
-
-  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files       = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.required_ruby_version = '>= 2.3.0'
 
   s.add_development_dependency 'awesome_print', '~> 1.6'
   s.add_development_dependency 'bundler', '~> 1.10'
   s.add_development_dependency 'byebug'
+  s.add_development_dependency 'dotenv'
   s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rspec', '~> 3.3'
-  s.add_development_dependency 'webmock', '~> 1.22'
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'webmock', '~> 3.4'
 
   s.add_runtime_dependency 'rest-client', '~> 2.0'
 end

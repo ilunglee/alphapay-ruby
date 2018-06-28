@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
+require 'dotenv/load'
 require 'alphapay'
 
 # You can add fixtures and/or initialization code here to make experimenting
@@ -11,4 +12,10 @@ require 'byebug'
 # Pry.start
 
 require 'irb'
+
+AlphaPay.setup do |config|
+  config.partner_code    = ENV['PARNTER_CODE']
+  config.credential_code = ENV['CREDENTIAL_CODE']
+end
+
 IRB.start

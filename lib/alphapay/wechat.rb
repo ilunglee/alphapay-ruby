@@ -1,12 +1,17 @@
 module AlphaPay
 
   # WeChat
-  class WeChat < UnifiedOrder
+  class WeChat < AlphaPay::Order
 
-    WECHAT_QR = { channel: 'Wechat', operator: 'wechat qr' }.freeze
+    CHANNEL  = 'Wechat'.freeze
+    OPERATOR = 'wechat qr'.freeze
 
-    def qrcode
-      send_request(WECHAT_QR)
+    def channel
+      CHANNEL
+    end
+
+    def operator
+      OPERATOR
     end
 
   end

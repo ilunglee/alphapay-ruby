@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://pay.alphapay.ca/api/v1.0/gateway/partners/bad_code/orders/bad_code1530305535?nonce_str=rhwwcyxneapmzfrjcsitmhhueb&sign=09ac1f33d1a4b50adb4343eebefdc213f38c7fa4c72ae339d736ad160ec08333&time=1530305535070
+    body:
+      encoding: UTF-8
+      string: '{"order_id":"bad_code1530305535","description":"completes -> bad_code1530305535","price":10,"currency":"CAD","notify_url":null,"channel":"Alipay","operator":"alipay
+        qr"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.5.1p57
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '169'
+      Host:
+      - pay.alphapay.ca
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Fri, 29 Jun 2018 20:52:15 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '135'
+      Connection:
+      - keep-alive
+      X-Server-From:
+      - Pay-Center|12366@localhost
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"return_msg":"Partner Code is invalid","message":"Partner Code is
+        invalid","return_code":"INVALID_SHORT_ID","timestamp":1530305535265}'
+    http_version: 
+  recorded_at: Fri, 29 Jun 2018 20:52:15 GMT
+recorded_with: VCR 4.0.0
