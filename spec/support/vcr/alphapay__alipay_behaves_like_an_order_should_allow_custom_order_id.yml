@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://pay.alphapay.ca/api/v1.0/gateway/partners/ZZZ6/orders/999999?nonce_str=oernxptiqzvmcpttowgqzzbrpe&sign=48f08cd5cfff952c2419bc1e25fb73e58d265e179650a24465b7678e2f689913&time=1530657263881
+    body:
+      encoding: UTF-8
+      string: '{"order_id":"999999","description":"completes -> 999999","price":10,"currency":"CAD","notify_url":null,"channel":"Alipay","operator":"alipay
+        qr"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.5.1p57
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '145'
+      Host:
+      - pay.alphapay.ca
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Tue, 03 Jul 2018 22:34:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1264'
+      Connection:
+      - keep-alive
+      X-Server-From:
+      - Pay-Center|12366@localhost
+    body:
+      encoding: UTF-8
+      string: '{"partner_order_id":"999999","full_name":"Flash Pay Inc.","code_url":"https://pay.alphapay.ca/api/v1.0/payment/partners/ZZZ6/orders/02405201807031433164172976/retail_pay","partner_name":"IT
+        ALPHA PAY","channel":"Alipay","result_code":"EXISTS","partner_code":"ZZZ6","order_id":"02405201807031433164172976","return_code":"SUCCESS","pay_url":"https://pay.alphapay.ca/api/v1.0/gateway/partners/ZZZ6/orders/999999/pay","qrcode_img":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQAAAABRBrPYAAACKElEQVR42u2aMXLEIAxF5crH4KY23JQjpKRC4X/JmdjrzKRFg8cF633bCPH1Ja/of64vWdjCFrawhUXAuuA6RLaWuqS+a9F67BVP91gY1vVUzftYj28Tw4AnPRpWZa9nS6UJFyMyWIwQHSExrRsBRAYxiYwhpVvKIxRMhogYU5pbf9i55m/fz8LUmAkX4nC73/VtZswuiDNDUZDkDnzWrKmxAWQKF8rQkCw7yy9bPz3mdUfkJDNUq/BoZ9TfaJiw2iIyFKvMDD+eST49hlB4WCqLkR/nk4EKhZlLJDwWG24sThSmUJg26JXSGxeWIWDNdSwWBuEyE8WA2BN8cw/I9Fg359/kd24X/xgKU4uD6TNrUKaCQbFjYR1qnMZ201rAOtJA4n407PNjyc0wAoLEZuW1rjYWtqtJVqGbgnDxONvHSJh6e+7yRRNVzV3kWFi3J26isNjcNNZNQ2Fq4xfffSiz/0oeWz89Zo4iiyW2F1+UoYdEz48ZebD4FneMHE08jvP82C+l8vGLJXm/N3cRMLQAIPWalzLPHQ6F7TaBsUqk7NYrJ//PEWIAzHpYM41imQDdviv5/Ng1WINXtAnM+ZbkATAblpIRTvsTTVT96Izmx3wAjjpbPOflTd8CYHZ+MSM109hpMOTDYITBqM9XS8uyqxoQO682ljmPPM9/vaOcGOMLOJsvcZhmA4rSXl6dz41dfxJgTH5MI4MTC1t/cVnYwha2sPjYN+UM+Drpk4ftAAAAAElFTkSuQmCC"}'
+    http_version: 
+  recorded_at: Tue, 03 Jul 2018 22:34:24 GMT
+recorded_with: VCR 4.0.0

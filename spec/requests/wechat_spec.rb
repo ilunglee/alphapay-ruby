@@ -12,6 +12,6 @@ describe AlphaPay::WeChat do
   end
 
   it_behaves_like 'an order' do
-    subject { AlphaPay::WeChat.new(10) }
+    subject { AlphaPay::WeChat }
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://pay.alphapay.ca/api/v1.0/gateway/partners/ZZZ6/exchange_rate?nonce_str=gjdhmdcjjxduxolkkjyvuphobp&sign=35c7252d4aa14ab3286322fbdb1c1c703122e2a654a9f92e1cac34fcd791a9c6&time=1530307109688
+    uri: https://pay.alphapay.ca/api/v1.0/gateway/partners/ZZZ6/exchange_rate?nonce_str=lrwowbwwoghkywynrzvfssykqk&sign=e14b99d82d0b11a95d7e3fc8b16772690d0f70e9843ca090fa4d7f230452973d&time=1530657264287
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - Tengine
       Date:
-      - Fri, 29 Jun 2018 21:18:30 GMT
+      - Tue, 03 Jul 2018 22:34:25 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -36,7 +36,7 @@ http_interactions:
       - Pay-Center|12366@localhost
     body:
       encoding: UTF-8
-      string: '{"rate":5.025600,"return_code":"SUCCESS"}'
+      string: '{"rate":5.100100,"return_code":"SUCCESS"}'
     http_version: 
-  recorded_at: Fri, 29 Jun 2018 21:18:30 GMT
+  recorded_at: Tue, 03 Jul 2018 22:34:25 GMT
 recorded_with: VCR 4.0.0

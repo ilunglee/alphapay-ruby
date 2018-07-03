@@ -8,13 +8,14 @@ module AlphaPay
 
     attr_accessor :description, :price, :currency, :response, :channel, :operator, :request
 
-    def initialize(price, currency: nil, description: nil)
+    def initialize(price, currency: nil, description: nil, order_id: nil)
       missing_keys? &&
         raise(AlphaPay::Exceptions::KeyMissingError.
               new(msg: 'missing credential_code && partner_code'))
       @description = description || "completes -> #{order_id}"
       @currency    = currency    || AlphaPay.default_currency
       @price       = price
+      @order_id    = order_id
     end
 
     def connect
@@ -54,7 +55,8 @@ module AlphaPay
     private
 
     def order_id
-      "#{AlphaPay.partner_code}#{Time.now.to_i}"
+      @order_id ||=
+        "#{AlphaPay.partner_code}#{Time.now.to_i}"
     end
 
     def url

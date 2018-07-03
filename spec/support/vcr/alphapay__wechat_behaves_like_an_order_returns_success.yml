@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://pay.alphapay.ca/api/v1.0/gateway/partners/ZZZ6/orders/ZZZ61530657265?nonce_str=zjvrqrmztztmjxqromsjblhmat&sign=7d05dbecd931ea2cfdcdba9b6041c07326bf9b941c382b6b7278f3f3b43ce5c3&time=1530657265684
+    body:
+      encoding: UTF-8
+      string: '{"order_id":"ZZZ61530657265","description":"completes -> ","price":10,"currency":"CAD","notify_url":null,"channel":"Wechat","operator":"wechat
+        qr"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.5.1p57
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '147'
+      Host:
+      - pay.alphapay.ca
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Tue, 03 Jul 2018 22:34:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1265'
+      Connection:
+      - keep-alive
+      X-Server-From:
+      - Pay-Center|12366@localhost
+    body:
+      encoding: UTF-8
+      string: '{"partner_order_id":"ZZZ61530657265","full_name":"Flash Pay Inc.","code_url":"https://pay.alphapay.ca/api/v1.0/payment/partners/ZZZ6/orders/02405201807031434258556539/retail_pay","partner_name":"IT
+        ALPHA PAY","channel":"Wechat","result_code":"SUCCESS","partner_code":"ZZZ6","order_id":"02405201807031434258556539","return_code":"SUCCESS","pay_url":"https://pay.alphapay.ca/api/v1.0/gateway/partners/ZZZ6/orders/ZZZ61530657265/pay","qrcode_img":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQAAAABRBrPYAAACGklEQVR42u2aS5KDMAxExcrH4KZ8bsoRZumVNVK37QkJqZqtVaaoFMGPRURLatsR/c/xIxOb2MQmNrEIWBE/9ryqXrvqaZ+49rspFubX1ybrYWdyUrMseKREwy6xUQzZxZJXi8niD8oWEbOAnNliIhuUgDsxsR0RoMj713AYRJ5qLnPo/JYLQ2N41Ya9nY/1bWisH8VH7SkrXzUUjz1rXKwgeT0mUtPZipj1o9MrWChMc4uAddtan6FzL9qhMKbzUh1FzeID7emzcA2NwU7w57P/us1Y+PY1FGb5a6Rp24aEDSiz9d7jFgDzXKbO0Y+ytGhcd5EPj9EMcwj2mP2XTiMUVtp8Z0MWW6FW2qq8lmBY8t9u/r85jdqePk3j6Ji2psPDXzpC8STysbGCgiypzuxolQUCuE/Yh8eUrqlVKnalDZajBMO0BQSOkVMAuIt7QMbH8OrX0psRTpjGu8EIgHX/36fqqXuqUJi2StVd8a7M6zeRD48V1Kgld9MIkr4xGFZN48ucjs3oIxfGx6qjoDemweCy8JGiYScEwMKFZXDnJWmJhl11YQ269lBUhWPZPxDWV9VYrOg0KIBg2J//hyVmV8J66V3kATAsN3Xv1BuTyf7UYFjdvtHWjLhqKl92eYbHmsgP7Fj1bY6AWJ/NcZFNa5WOhXGjiv7fPRWnsefzftbIGPXs968X0wjNx8LmX1wmNrGJTSw+9gvAlQiH/AoNHAAAAABJRU5ErkJggg=="}'
+    http_version: 
+  recorded_at: Tue, 03 Jul 2018 22:34:25 GMT
+recorded_with: VCR 4.0.0

@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: https://pay.alphapay.ca/api/v1.0/gateway/partners/bad_code/orders/bad_code1530305543?nonce_str=ivymfpsvesjyscolwxolzwkfwf&sign=da87d3fc17e72e0487515e6e2ba0f505fe5bbc823e518bb12be06a759a5d2ea3&time=1530305543986
+    uri: https://pay.alphapay.ca/api/v1.0/gateway/partners/bad_code/orders/bad_code1530657265?nonce_str=zkbrrqyfljrrfndoidqeslfnsi&sign=48ccc4544472cc097d18d4e39698e2cef6b104339df56ff674a378bb163c2d6f&time=1530657265306
     body:
       encoding: UTF-8
-      string: '{"order_id":"bad_code1530305543","description":"completes -> bad_code1530305543","price":10,"currency":"CAD","notify_url":null,"channel":"Wechat","operator":"wechat
+      string: '{"order_id":"bad_code1530657265","description":"completes -> ","price":10,"currency":"CAD","notify_url":null,"channel":"Wechat","operator":"wechat
         qr"}'
     headers:
       Accept:
@@ -17,7 +17,7 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '169'
+      - '151'
       Host:
       - pay.alphapay.ca
   response:
@@ -28,7 +28,7 @@ http_interactions:
       Server:
       - Tengine
       Date:
-      - Fri, 29 Jun 2018 20:52:24 GMT
+      - Tue, 03 Jul 2018 22:34:25 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -48,7 +48,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"return_msg":"Partner Code is invalid","message":"Partner Code is
-        invalid","return_code":"INVALID_SHORT_ID","timestamp":1530305544172}'
+        invalid","return_code":"INVALID_SHORT_ID","timestamp":1530657265456}'
     http_version: 
-  recorded_at: Fri, 29 Jun 2018 20:52:24 GMT
+  recorded_at: Tue, 03 Jul 2018 22:34:25 GMT
 recorded_with: VCR 4.0.0

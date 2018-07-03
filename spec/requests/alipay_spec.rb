@@ -12,6 +12,6 @@ describe AlphaPay::AliPay do
   end
 
   it_behaves_like 'an order' do
-    subject { AlphaPay::AliPay.new(10) }
+    subject { AlphaPay::AliPay }
   end
 end
