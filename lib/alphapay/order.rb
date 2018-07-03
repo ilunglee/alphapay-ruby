@@ -22,8 +22,12 @@ module AlphaPay
       send_request
     end
 
+    def alphapay_order_id
+      response['order_id']
+    end
+
     def pay_url
-      response['pay_url']
+      "#{response['pay_url']}?#{encode_params(params: signature)}"
     end
 
     def qrcode
@@ -52,12 +56,12 @@ module AlphaPay
       self
     end
 
-    private
-
     def order_id
       @order_id ||=
         "#{AlphaPay.partner_code}#{Time.now.to_i}"
     end
+
+    private
 
     def url
       "#{AlphaPay.api_base}/#{AlphaPay.partner_code}/orders/#{order_id}"
